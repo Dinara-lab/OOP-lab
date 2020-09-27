@@ -11,17 +11,17 @@ public class University {
         this.foundationYear = year;
         this.student = object;
     }
-    public List<Student> printValue(List<Student> objects){
-        for (Student s : objects){
+    public void  printValue(){
+        for (Student s : student){
             System.out.println(s);
-        }return objects;
+        }
     }
     public void  showInfoUniversity() {
 
         System.out.print("University name:" + universityName + " ");
         System.out.println("Foundation Year:" + foundationYear+ " ");
         System.out.println("The list of students:");
-        printValue(student);
+        printValue();
     }
 }
 

@@ -51,5 +51,9 @@ public class Data {
         double average = (listObjectSum1 + listObjectSum2 + listObjectSum3) /totalStudentNum;
         System.out.println("The average is of marks is: " + average);
 
+
+
     }
+
+
 }
