@@ -13,7 +13,7 @@ public class BoxProperties {
         this.boxHeight = this.boxWidth=this.boxDepth = value;
     }
 
-    public BoxProperties(int height , int width, int length){
+    public BoxProperties(int height, int width, int length){
         this.boxHeight = height;
         this.boxWidth = width;
         this.boxDepth = length;
