@@ -9,7 +9,7 @@ public class Data {
         Student student5 = new Student("Victoria", 19, 9);
 
         University university1 = new University("ULIM", 1992, new Student[]{student1,student2});
-        University university2 = new University("UTM", 1964, new Student[]{student3, student4,student5});
+        University university2 = new University("UTM", 1964, new Student[]{student3, student4, student5});
         university1.printInfo();
         university1.getStudentList();
         university2.printInfo();
