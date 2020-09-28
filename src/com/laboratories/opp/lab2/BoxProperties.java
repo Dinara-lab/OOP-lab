@@ -20,7 +20,7 @@ public class BoxProperties {
     }
 
     public int surfaceArea(){
-        return 2 *(boxDepth * boxHeight + boxWidth * boxHeight + boxDepth * boxWidth );
+        return 2 *(boxDepth * boxHeight + boxWidth * boxHeight + boxDepth * boxWidth);
     }
 
     public int volume (){
