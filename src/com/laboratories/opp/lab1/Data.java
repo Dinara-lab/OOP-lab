@@ -18,7 +18,7 @@ public class Data {
         float average = (float)(student1.getMark() + student2.getMark() + student3.getMark() + student4.getMark() + student5.getMark())
                       /(float)(university1.getStudentListLength()+university2.getStudentListLength());
         System.out.println("-----------------------------------"+"\n"+
-                           "The average is "+ average);
+                           "The average is " + average);
 
     }
 }
