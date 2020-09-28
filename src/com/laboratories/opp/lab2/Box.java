@@ -4,11 +4,11 @@ public class Box {
     public static void main(String[] args) {
         BoxProperties box1 = new BoxProperties();
         BoxProperties box2 = new BoxProperties(20);
-        BoxProperties box3 = new BoxProperties(10,20, 30,40);
-        System.out.println(box1);
-        System.out.println(box2);
-        System.out.println(box3);
-        System.out.println("Surface: " + box3.surfaceArea());
-        System.out.println("Volume :" + box3.volume());
+        BoxProperties box3 = new BoxProperties(10, 30,40);
+        System.out.println("Box1: " + box1);
+        System.out.println("Box2: " + box2);
+        System.out.println("Box3: " + box3);
+        System.out.println("Box Surface = " + box3.surfaceArea() + " m^2");
+        System.out.println("Box Volume = " + box3.volume() + " m^3");
     }
 }

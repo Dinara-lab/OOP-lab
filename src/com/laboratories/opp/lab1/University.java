@@ -12,7 +12,7 @@ public class University {
     }
 
     public void getStudentList() {
-        for (int i = 0; i<studentList.length; i++)
+        for (int i = 0; i < studentList.length; i++)
             System.out.println(studentList[i]);
     }
     public int getStudentListLength(){

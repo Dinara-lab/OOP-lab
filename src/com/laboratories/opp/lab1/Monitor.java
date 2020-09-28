@@ -9,7 +9,7 @@ public class Monitor {
         if (m1.showInfo().equals(m2.showInfo())){
             System.out.println("The properties are equal");
         }else {
-            System.out.println("The properties are not equal.");
+            System.out.println("The properties are not equal");
         }
     }
 }

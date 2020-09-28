@@ -1,41 +1,35 @@
 package com.laboratories.opp.lab2;
 
 public class BoxProperties {
-    int height;
-    int width;
-    int depth;
-    int length;
-
+    private int boxHeight;
+    private int boxWidth;
+    private int boxDepth;
 
     public BoxProperties(){
-        this.height = this.width=this.depth = 1;
+        this.boxHeight = this.boxWidth=this.boxDepth = 1;
     }
 
-    public  BoxProperties(int sameValue){
-        this.height = this.width=this.depth = sameValue;
+    public BoxProperties(int value){
+        this.boxHeight = this.boxWidth=this.boxDepth = value;
     }
 
-
-    public  BoxProperties(int height , int width, int depth, int length){
-        this.height = height;
-        this.width = width;
-        this.depth = depth;
-        this.length = length;
+    public BoxProperties(int height , int width, int length){
+        this.boxHeight = height;
+        this.boxWidth = width;
+        this.boxDepth = length;
     }
 
     public int surfaceArea(){
-        int surface;
-         return surface = 2 *(length*height + width * height + length*width );
+        return 2 *(boxDepth * boxHeight + boxWidth * boxHeight + boxDepth * boxWidth );
     }
 
     public int volume (){
-       int volume;
-        return  volume = height*length*width;
+        return boxHeight * boxDepth *boxWidth;
     }
 
     @Override
    public String toString(){
-        return "Height:" +  height+ " "+ "Width:" + width + " " + "Depth:" + depth + "Length: " + length;
+        return "Height:" +  boxHeight + " " + "Width:" + boxWidth + " " + "Depth: " + boxDepth;
     }
 
 }

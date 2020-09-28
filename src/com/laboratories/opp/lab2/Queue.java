@@ -1,12 +1,11 @@
 package com.laboratories.opp.lab2;
 
 public class Queue {
-    int front;
-    int rear;
-    int capacity;
-    int queue[];
-    boolean isFixedSized;
-
+    private int front;
+    private int rear;
+    private int capacity;
+    private int[] queue;
+    private boolean isFixedSized;
 
     public Queue(int maxSize) {
         this.front = this.rear = 0;
@@ -17,13 +16,11 @@ public class Queue {
 
     public Queue() {
         this.front = this.rear= 0;
-        this.queue = new int[20];
+        this.queue = new int[32767];
         this.isFixedSized = false;
     }
 
-
     public void push(int value) {
-
         if (isFixedSized) {
             queue[rear] = value;
             rear++;
@@ -44,25 +41,28 @@ public class Queue {
     }
 
     public void pop() {
-        for (int i = 0; i < rear - 1; i++) {
+        int i = 0;
+        int elementToExtract;
+        elementToExtract = queue[front];
+        for (; i < rear - 1; i++) {
             queue[i] = queue[i + 1];
         }
         rear--;
+        System.out.println("The extracted element is:" + elementToExtract);
     }
 
     public void printQueue() {
         for (int i = front; i < rear; i++) {
-            System.out.printf(" %d <-- ", queue[i]);
-
+            System.out.print(queue[i] + " <-- ");
         }
+
         System.out.println();
     }
 
     public void isFull() {
         if (!isFixedSized)
         {
-            System.out.println("never empty");}
-
+            System.out.println("never full");}
         else if (capacity == rear) {
             System.out.println("Queue is full");
         }else {
@@ -71,14 +71,11 @@ public class Queue {
     }
 
     public void isEmpty() {
-
-
-         if (front == rear) {
-            System.out.println("Queue is empty");
+        if (front == rear) {
+            System.out.println("queue is empty\n");
         }else{
-            System.out.println("not empty");
+            System.out.println("queue is not empty\n");
         }
-
     }
 }
 

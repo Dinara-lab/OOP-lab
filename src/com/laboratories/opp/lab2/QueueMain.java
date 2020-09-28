@@ -8,19 +8,29 @@ public class QueueMain {
         firstQueue.push(30);
         firstQueue.push(40);
         firstQueue.printQueue();
-        firstQueue.pop();
-        firstQueue.printQueue();
         firstQueue.isFull();
         firstQueue.isEmpty();
+        firstQueue.pop();
+        firstQueue.printQueue();
+        firstQueue.pop();
+        firstQueue.printQueue();
+        firstQueue.pop();
+        firstQueue.printQueue();
+        firstQueue.isEmpty();
+
         secondQueue.push(10);
-        secondQueue.printQueue();
         secondQueue.push(100);
+        secondQueue.push(1000);
         secondQueue.printQueue();
+        secondQueue.isFull();
         secondQueue.isEmpty();
         secondQueue.pop();
-        secondQueue.isEmpty();
         secondQueue.printQueue();
-
+        secondQueue.pop();
+        secondQueue.printQueue();
+        secondQueue.pop();
+        secondQueue.printQueue();
+        secondQueue.isEmpty();
 
     }
 }

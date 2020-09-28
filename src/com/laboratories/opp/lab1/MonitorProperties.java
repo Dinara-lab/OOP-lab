@@ -12,9 +12,9 @@ package com.laboratories.opp.lab1;
     }
 
     public String showInfo(){
-        return   "Color:" + color+ " " +
-                 "Height:" + screenRefreshRate+ "Hz" + " " +
-                 "Resolution:" + resolution +"p";
+        return   "Color:" + color + " " +
+                 "Height:" + screenRefreshRate + "Hz" + " " +
+                 "Resolution:" + resolution + "p";
     }
 
 }
