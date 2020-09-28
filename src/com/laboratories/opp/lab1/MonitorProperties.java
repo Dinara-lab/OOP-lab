@@ -1,9 +1,9 @@
 package com.laboratories.opp.lab1;
 
     public class MonitorProperties {
-    String color;
-    int screenRefreshRate;
-    int resolution;
+    private String color;
+    private int screenRefreshRate;
+    private int resolution;
 
     public MonitorProperties(String color, int screenRefreshRate, int resolution) {
         this.color = color;
@@ -14,7 +14,7 @@ package com.laboratories.opp.lab1;
     public String showInfo(){
         return   "Color:" + color+ " " +
                  "Height:" + screenRefreshRate+ "Hz" + " " +
-                "Resolution:" + resolution +"p";
+                 "Resolution:" + resolution +"p";
     }
 
 }
