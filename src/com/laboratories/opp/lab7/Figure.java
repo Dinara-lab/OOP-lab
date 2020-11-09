@@ -20,7 +20,7 @@ abstract class Figure {
         System.out.println(obj1.getArea());
         System.out.println(obj1.getPerimeter());
 
-        Rectangle rectangle = new Rectangle(3, 4) {
+        Rectangle rectangle = new Rectangle(1, 10) {
             @Override
             public Integer getArea() {
                 return a * b;
@@ -34,7 +34,7 @@ abstract class Figure {
         System.out.println(rectangle.getArea());
         System.out.println(rectangle.getPerimeter());
 
-        Triangle triangle = new Triangle(2 , 3, 5) {
+        Triangle triangle = new Triangle(87, 30, 50) {
             @Override
             public Integer getArea() {
                 return a*b*c ;
@@ -48,9 +48,8 @@ abstract class Figure {
         System.out.println(triangle.getArea());
         System.out.println(triangle.getPerimeter());
 
-        Object[] figures = {obj1,triangle,rectangle};
-
-       FigureController figures1 = new FigureController(figures);
+        Figure[] figures = {obj1,triangle,rectangle};
+        System.out.println(FigureController.getMaxArea(figures).toString());
 
     }
 

@@ -9,4 +9,11 @@ public abstract class Rectangle extends Figure{
         this.b = b;
     }
 
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "a=" + a +
+                ", b=" + b +
+                '}';
+    }
 }

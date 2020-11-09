@@ -7,4 +7,10 @@ public abstract class Square extends Figure {
        this.a = a;
     }
 
+    @Override
+    public String toString() {
+        return "Square{" +
+                "a=" + a +
+                '}';
+    }
 }

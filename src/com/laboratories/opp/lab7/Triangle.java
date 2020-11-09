@@ -10,4 +10,13 @@ public abstract class Triangle extends Figure {
         this.b = b;
         this.c = c;
     }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
+    }
 }
