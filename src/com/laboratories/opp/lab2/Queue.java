@@ -70,12 +70,17 @@ public class Queue {
         }
     }
 
-    public void isEmpty() {
+    public boolean isEmpty() {
         if (front == rear) {
             System.out.println("queue is empty\n");
         }else{
             System.out.println("queue is not empty\n");
         }
+        return false;
+    }
+
+    public String readString() {
+        return null;
     }
 }
 
