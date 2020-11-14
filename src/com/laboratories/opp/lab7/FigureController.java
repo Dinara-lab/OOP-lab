@@ -24,6 +24,23 @@ public class FigureController {
         }
         return figures[index];
     }
+    public static Figure getMaxPerimeter(Figure[] figures) {
+        Integer[] maxPerimeter = new Integer[figures.length];
+        for (int i = 0; i < maxPerimeter.length; i++) {
+            maxPerimeter[i] = figures[i].getPerimeter();
+        }
+        int maxValue = maxPerimeter[0];
+        int index = 0;
+        for(int a = 0; a < maxPerimeter.length; a++)
+        {
+            if(maxValue < maxPerimeter[a])
+            {
+                maxValue = maxPerimeter[a];
+                index = a;
+            }
+        }
+        return figures[index];
+    }
     @Override
     public String toString() {
         String string = "";

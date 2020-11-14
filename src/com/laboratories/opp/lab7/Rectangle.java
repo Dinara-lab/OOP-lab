@@ -5,6 +5,7 @@ public abstract class Rectangle extends Figure{
     Integer b;
 
     public Rectangle(Integer a, Integer b){
+        super(0);
         this.a = a;
         this.b = b;
     }
