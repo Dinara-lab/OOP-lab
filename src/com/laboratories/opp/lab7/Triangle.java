@@ -1,11 +1,11 @@
 package com.laboratories.opp.lab7;
 
 public abstract class Triangle extends Figure {
-    Integer a;
-    Integer b;
-    Integer c;
+     double a;
+     double b;
+     double c;
 
-    public Triangle(Integer a, Integer b, Integer c){
+    public Triangle(double a, double b, double c){
         super(0);
         this.a = a;
         this.b = b;

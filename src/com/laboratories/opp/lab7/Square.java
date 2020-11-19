@@ -1,9 +1,9 @@
 package com.laboratories.opp.lab7;
 
 public abstract class Square extends Figure {
-    Integer a;
+     double a;
 
-    public Square(Integer a){
+    public Square(double a){
         super(0);
         this.a = a;
     }

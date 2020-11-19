@@ -1,18 +1,18 @@
 package com.laboratories.opp.lab7;
 
 public class FigureController {
-    Object[] figures;
+     Object[] figures;
 
     public FigureController(Object[] figures) {
         this.figures = figures;
     }
 
     public static Figure getMaxArea(Figure[] figures) {
-        Integer[] maxArea = new Integer[figures.length];
+        double[] maxArea = new double[figures.length];
         for (int i = 0; i < maxArea.length; i++) {
              maxArea[i] = figures[i].getArea();
         }
-        int maxValue = maxArea[0];
+        double maxValue = maxArea[0];
         int index = 0;
         for(int a = 0; a < maxArea.length; a++)
         {
@@ -25,11 +25,11 @@ public class FigureController {
         return figures[index];
     }
     public static Figure getMaxPerimeter(Figure[] figures) {
-        Integer[] maxPerimeter = new Integer[figures.length];
+        double[] maxPerimeter = new double [figures.length];
         for (int i = 0; i < maxPerimeter.length; i++) {
             maxPerimeter[i] = figures[i].getPerimeter();
         }
-        int maxValue = maxPerimeter[0];
+        double maxValue = maxPerimeter[0];
         int index = 0;
         for(int a = 0; a < maxPerimeter.length; a++)
         {

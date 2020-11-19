@@ -1,69 +1,67 @@
 package com.laboratories.opp.lab7;
 abstract class Figure {
 
-    Integer raza;
-
-
-    public Figure(Integer raza){
-        this.raza = raza;
+    double r;
+    public Figure(double r){
+        this.r = r;
     }
 
-    public abstract Integer getArea();
-    public abstract Integer getPerimeter();
+    public abstract double getArea();
+    public abstract double getPerimeter();
 
     public static void main(String[] args) {
 
-        Square square = new Square(1) {
+        Square square = new Square(4.0) {
             @Override
-            public Integer getArea() {
-                return a * a;
+            public double getArea() {
+                return Math.pow(a,2);
             }
 
             @Override
-            public Integer getPerimeter() {
-                return a * 4;
+            public double getPerimeter() {
+                return a * 4.0;
             }
         };
 
-
-        Rectangle rectangle = new Rectangle(1, 10) {
+        Rectangle rectangle = new Rectangle(3.0, 6.5) {
             @Override
-            public Integer getArea() {
+            public double getArea() {
                 return a * b;
             }
 
             @Override
-            public Integer getPerimeter() {
-                return a + a + b + b;
+            public double getPerimeter() {
+                return 2.0 *(a+b);
             }
         };
 
-
-        Triangle triangle = new Triangle(1, 3, 5) {
+        Triangle triangle = new Triangle(2.56, 6.75, 5.80) {
+            double p = (a+b+c)/2.0;
             @Override
-            public Integer getArea() {
-                return a*b*c ;
+            public double getArea() {
+                return Math.sqrt (p * (p - a) * (p - b) * (p -c));
             }
-
             @Override
-            public Integer getPerimeter() {
+            public double getPerimeter() {
                 return a+b+c;
             }
         };
-        Figure circle = new Figure(1) {
+
+        Figure circle = new Figure(2.5) {
+            final double Pi = 3.14;
             @Override
-            public Integer getArea() {
-                return 3*raza*raza;
+            public double getArea() {
+                return Math.pow(r,2) * Pi;
             }
 
             @Override
-            public Integer getPerimeter() {
-                return 2* 3 * raza;
+            public double getPerimeter() {
+                return 2* Pi * r;
             }
             @Override
             public String toString() {
                 return "Circle{" +
-                        "raza=" + raza + '}';
+                        "r=" + r + '}';
             }
         };
 

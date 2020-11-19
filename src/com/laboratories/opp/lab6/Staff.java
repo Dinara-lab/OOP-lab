@@ -1,6 +1,8 @@
 package com.laboratories.opp.lab6;
 
-public class Staff extends Organization {
+import java.util.Date;
+
+public class Staff extends Person {
     Date joined;
     String [] education;
     String [] certification;

@@ -10,7 +10,7 @@ public class Main {
         File file = new File("/Users/buciladinara/IdeaProjects/OOP-labs/src/com/laboratories/opp/lab4/one_expression");
         Scanner scanner = new Scanner(file);
         String s1 = scanner.nextLine();
-        System.out.println(Expression.isValid(s1));
+        System.out.println("The expression from the first file is: " + Expression.isValid(s1));
         File file1 = new File("/Users/buciladinara/IdeaProjects/OOP-labs/src/com/laboratories/opp/lab4/three_expressions");
         scanner.close();
 
@@ -21,13 +21,13 @@ public class Main {
             counter++;
             switch(counter){
                 case 1:
-                    System.out.println(Expression.isValid(line));
+                    System.out.println("The first expression from the second file is: " + Expression.isValid(line));
                     break;
                 case 2:
-                    System.out.println(Expression.isValid(line));
+                    System.out.println("The second expression from the second file is: " +Expression.isValid(line));
                     break;
                 case 3:
-                    System.out.println(Expression.isValid(line));
+                    System.out.println("The third expression from the second file is: " + Expression.isValid(line));
                     break;
                 default:
                     System.out.println("false");
@@ -39,13 +39,13 @@ public class Main {
             ScriptEngineManager manager = new ScriptEngineManager();
             ScriptEngine engine = manager.getEngineByName("js");
             Object result = engine.eval(s1);
-            System.out.println("Rezultatul expresiei este: " + result);
+            System.out.println("Result (fisrt expr. first file): " + result);
         }
 
         ScriptEngineManager manager = new ScriptEngineManager();
         ScriptEngine engine = manager.getEngineByName("js");
         Object result_1 = engine.eval("25 / (2+5)*12 - ((29*4-2) + 32) -14");
-        System.out.println("Rezultatul expresiei este: (2x-3y)" + result_1);
+        System.out.println("Result (first expr. second file): (2x-3y)" + result_1);
 
     }
 

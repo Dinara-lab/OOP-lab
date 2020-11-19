@@ -1,10 +1,10 @@
 package com.laboratories.opp.lab7;
 
 public abstract class Rectangle extends Figure{
-    Integer a;
-    Integer b;
+    double a;
+    double b;
 
-    public Rectangle(Integer a, Integer b){
+    public Rectangle(double a, double b){
         super(0);
         this.a = a;
         this.b = b;
