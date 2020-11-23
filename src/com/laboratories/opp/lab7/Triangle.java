@@ -1,6 +1,6 @@
 package com.laboratories.opp.lab7;
 
-public abstract class Triangle extends Figure {
+public class Triangle extends Figure {
      double a;
      double b;
      double c;
@@ -19,5 +19,16 @@ public abstract class Triangle extends Figure {
                 ", b=" + b +
                 ", c=" + c +
                 '}';
+    }
+
+    @Override
+    public double getArea() {
+        double p = (a+b+c)/2.0;
+        return Math.sqrt (p * (p - a) * (p - b) * (p -c));
+    }
+
+    @Override
+    public double getPerimeter() {
+        return a+b+c;
     }
 }

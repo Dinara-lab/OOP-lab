@@ -1,6 +1,6 @@
 package com.laboratories.opp.lab7;
 
-public abstract class Rectangle extends Figure{
+public  class Rectangle extends Figure{
     double a;
     double b;
 
@@ -16,5 +16,13 @@ public abstract class Rectangle extends Figure{
                 "a=" + a +
                 ", b=" + b +
                 '}';
+    }
+    @Override
+    public double getArea() {
+        return  a * b;
+    }
+    @Override
+    public double getPerimeter() {
+        return 2.0 *(a+b);
     }
 }
