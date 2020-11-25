@@ -9,7 +9,7 @@ public class B extends A{
     }
     @Override
     public String toString() {
-        return super.toString().replace("}", " property b='" + b + "'}");
+        return super.toString().replace("}", " b='" + b + "'}");
 
     }
 }

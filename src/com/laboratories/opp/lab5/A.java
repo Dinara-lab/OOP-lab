@@ -3,7 +3,7 @@ package com.laboratories.opp.lab5;
 public class A {
     protected  String a;
     //X variable;
-    protected X variable = new X ("xxx");
+    protected X x = new X ("xxx");
 
     public  A (String string, X variable){
         this.a = string;
@@ -11,8 +11,8 @@ public class A {
 
     }
     public String toString() {
-        return this.getClass().getSimpleName() + "{" +
-                "property a='" + a + '\'' + " value:" + variable.getValue() +
+        return this.getClass().getSimpleName() + " {" +
+                "a='" + a + '\'' + " value:" + x.getValue() +
                 '}';
     }
 }

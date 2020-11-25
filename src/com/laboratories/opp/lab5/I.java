@@ -8,7 +8,6 @@ public class I extends H {
     }
     @Override
     public String toString() {
-        return super.toString().replace("}", " i='" + i + " x.value=" + getX().getValue()+"'}");
-
+        return super.toString().replace("}", " i='" + i + "'}");
     }
 }
