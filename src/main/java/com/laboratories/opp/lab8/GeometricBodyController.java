@@ -1,10 +1,5 @@
 package com.laboratories.opp.lab8;
 public class GeometricBodyController {
-    Object[] geometricBodies;
-
-    public GeometricBodyController(GeometricBody[] geometricBodies) {
-        this.geometricBodies = geometricBodies;
-    }
 
     public static GeometricBody biggestVolume (GeometricBody[] geometricBodies){
         double [] maxVolume = new double [geometricBodies.length];
